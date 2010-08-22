@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCContrib.EmailSender", "MVCContrib.EmailSender\MVCContrib.EmailSender.csproj", "{7F183740-9E2D-432E-81EA-0480A1156186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCContrib.EmailSender.Test", "MVCContrib.EmailSender.Test\MVCContrib.EmailSender.Test.csproj", "{AB1C5BD9-3A6A-4B46-91EB-5B504656804B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCContrib.UI.Test", "MVCContrib.UI.Test\MVCContrib.UI.Test.csproj", "{F2830107-4444-4BF8-88A1-139B8BF12DEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F183740-9E2D-432E-81EA-0480A1156186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F183740-9E2D-432E-81EA-0480A1156186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F183740-9E2D-432E-81EA-0480A1156186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F183740-9E2D-432E-81EA-0480A1156186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB1C5BD9-3A6A-4B46-91EB-5B504656804B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1C5BD9-3A6A-4B46-91EB-5B504656804B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1C5BD9-3A6A-4B46-91EB-5B504656804B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1C5BD9-3A6A-4B46-91EB-5B504656804B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2830107-4444-4BF8-88A1-139B8BF12DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2830107-4444-4BF8-88A1-139B8BF12DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2830107-4444-4BF8-88A1-139B8BF12DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2830107-4444-4BF8-88A1-139B8BF12DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+A lightweight assembly for rendering message in ASP.NET MVC borrowing code from MVCContrib.Service and MonoRail RenderMessage code.
