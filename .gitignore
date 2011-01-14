@@ -1,10 +1,15 @@
-
-/build
-AssemblyInfo.cs
-
-# Standard VS.NET and ReSharper Foo
-src/*/obj
-src/*/bin
+*~
+obj
+bin/
+*.pidb
+*.dll
+*.mdb
+build/
+config.log
+config.make
+test-results
+*.userprefs
+TestResult.xml
 *.csproj.user
 _ReSharper*
 *ReSharper.*
