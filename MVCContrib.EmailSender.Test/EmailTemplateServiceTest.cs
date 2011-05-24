@@ -5,7 +5,6 @@ using System.Web.Mvc;
 using NUnit.Framework;
 using Rhino.Mocks;
 using MvcViewEngines = System.Web.Mvc.ViewEngines;
-using System.Net.Mail;
 
 namespace MvcContrib.EmailSender.Test
 {
@@ -54,9 +53,11 @@ namespace MvcContrib.EmailSender.Test
 		[Test]
 		public void CanRenderMessageWithEmbededHeader()
 		{
-			string to = "sokun@ncdd.gov.kh";
+			string to = "sokun@foo.bar";
+			string from = "sokun@foo.bar";
 			string body = "<body>whatever ...</body>";
-			var viewStream = new MemoryStream(Encoding.UTF8.GetBytes("to:" + to + Environment.NewLine + body));
+
+			var viewStream = new MemoryStream(Encoding.UTF8.GetBytes("to:" + to + Environment.NewLine + "from:" + from + Environment.NewLine + body));
 			var viewReader = MockRepository.GenerateMock<IViewStreamReader>();
 			viewReader.Expect(x => x.GetViewStream(null, null, null)).IgnoreArguments().Return(viewStream);
 
@@ -84,17 +85,19 @@ namespace MvcContrib.EmailSender.Test
 		public void CanRenderMessageFirstLineEmpty()
 		{
 			var viewStream = new MemoryStream(Encoding.UTF8.GetBytes(@"
-to: sokun@ncdd.gov.kh
-subject: Hello !
-<html>
-<head>
-		<title>EmbedHeader</title>
-</head>
-<body>
-what are you doing?
-</body>
-</html>
-"));
+						to: sokun@foo.bar
+						from: sokkun@foo.bar
+						subject: Hello !
+						<html>
+						<head>
+								<title>EmbedHeader</title>
+						</head>
+						<body>
+						what are you doing?
+						</body>
+						</html>
+						"));
+
 			var viewReader = MockRepository.GenerateMock<IViewStreamReader>();
 			viewReader.Expect(x => x.GetViewStream(null, null, null)).IgnoreArguments().Return(viewStream);
 
